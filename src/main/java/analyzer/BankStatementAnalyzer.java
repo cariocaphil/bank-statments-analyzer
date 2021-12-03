@@ -7,7 +7,7 @@ import java.time.Month;
 import java.util.List;
 
 public class BankStatementAnalyzer {
-    private static final String RESOURCES = "src/test/resources/";
+    private static final String RESOURCES = "src/main/java/test/resources/";
 
     public static void analyze(final String[] args, final BankStatementParser bankStatementParser) throws Exception {
 
