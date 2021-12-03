@@ -1,17 +1,16 @@
 import analyzer.BankStatementAnalyzer;
 import analyzer.BankStatementCSVParser;
+import analyzer.BankStatementParser;
 
 public class MainApplication {
 
     public static void main(String[] args) throws Exception {
         String[] files = {"bank-data-simple.csv"};
 
-        final BankStatementAnalyzer bankStatementAnalyzer
-                = new BankStatementAnalyzer();
+        final BankStatementAnalyzer bankStatementAnalyzer = new BankStatementAnalyzer();
 
-        BankStatementCSVParser bankStatementCSVParser = new BankStatementCSVParser();
+        final BankStatementParser bankStatementParser = new BankStatementCSVParser();
 
-
-        bankStatementAnalyzer.analyze(files, bankStatementCSVParser);
+        bankStatementAnalyzer.analyze(files, bankStatementParser);
     }
 }
