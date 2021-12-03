@@ -1,12 +1,10 @@
 package analyzer;
 
-import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.Month;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class BankStatementAnalyzer {
     private static final String RESOURCES = "src/test/resources/";
